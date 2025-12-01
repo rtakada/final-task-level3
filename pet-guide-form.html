@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,60 +14,61 @@
             --accent-color: #fb923c;
             --brown-color: #78350f;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #fef3c7;
         }
-        
+
         .navbar {
             background-color: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .navbar-brand {
             font-weight: bold;
             color: var(--primary-color) !important;
             font-size: 1.5rem;
         }
-        
+
         .nav-link {
             color: var(--brown-color) !important;
             font-weight: 500;
             margin: 0 10px;
         }
-        
-        .nav-link:hover, .nav-link.active {
+
+        .nav-link:hover,
+        .nav-link.active {
             color: var(--primary-color) !important;
         }
-        
+
         .page-header {
             background: linear-gradient(135deg, #dcfce7 0%, #fed7aa 100%);
             padding: 60px 0;
             border-radius: 0 0 50px 50px;
             margin-bottom: 40px;
         }
-        
+
         .form-container {
             background: white;
             border-radius: 30px;
             padding: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
         }
-        
+
         .form-section {
             margin-bottom: 35px;
             padding-bottom: 35px;
             border-bottom: 2px solid #f3f4f6;
         }
-        
+
         .form-section:last-child {
             border-bottom: none;
             margin-bottom: 0;
             padding-bottom: 0;
         }
-        
+
         .section-title {
             color: var(--brown-color);
             font-weight: 700;
@@ -76,58 +78,60 @@
             align-items: center;
             gap: 10px;
         }
-        
+
         .section-title i {
             color: var(--primary-color);
         }
-        
+
         .form-label {
             font-weight: 600;
             color: var(--brown-color);
             margin-bottom: 8px;
         }
-        
+
         .required-mark {
             color: #ef4444;
             margin-left: 3px;
         }
-        
-        .form-control, .form-select {
+
+        .form-control,
+        .form-select {
             border: 2px solid #e5e7eb;
             border-radius: 15px;
             padding: 12px 18px;
             transition: all 0.3s ease;
         }
-        
-        .form-control:focus, .form-select:focus {
+
+        .form-control:focus,
+        .form-select:focus {
             border-color: var(--primary-color);
             box-shadow: 0 0 0 0.2rem rgba(16, 185, 129, 0.15);
         }
-        
+
         .form-control::placeholder {
             color: #9ca3af;
         }
-        
+
         textarea.form-control {
             min-height: 120px;
             resize: vertical;
         }
-        
+
         .category-options {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 15px;
         }
-        
+
         .category-option {
             position: relative;
         }
-        
+
         .category-option input[type="radio"] {
             position: absolute;
             opacity: 0;
         }
-        
+
         .category-label {
             display: flex;
             flex-direction: column;
@@ -141,23 +145,23 @@
             background: white;
             text-align: center;
         }
-        
+
         .category-label i {
             font-size: 2.5rem;
             margin-bottom: 10px;
         }
-        
+
         .category-label:hover {
             border-color: var(--primary-color);
             background: rgba(16, 185, 129, 0.05);
         }
-        
-        .category-option input[type="radio"]:checked + .category-label {
+
+        .category-option input[type="radio"]:checked+.category-label {
             border-color: var(--primary-color);
             background: linear-gradient(135deg, #dcfce7, #fed7aa);
             font-weight: 700;
         }
-        
+
         .file-upload-area {
             border: 2px dashed #e5e7eb;
             border-radius: 20px;
@@ -167,51 +171,51 @@
             transition: all 0.3s ease;
             background: #fafafa;
         }
-        
+
         .file-upload-area:hover {
             border-color: var(--primary-color);
             background: rgba(16, 185, 129, 0.05);
         }
-        
+
         .file-upload-area i {
             font-size: 3rem;
             color: var(--primary-color);
             margin-bottom: 15px;
         }
-        
+
         .upload-text {
             color: var(--brown-color);
             font-weight: 600;
             margin-bottom: 5px;
         }
-        
+
         .upload-hint {
             color: #9ca3af;
             font-size: 0.9rem;
         }
-        
+
         .image-preview-container {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
             margin-top: 20px;
         }
-        
+
         .image-preview {
             position: relative;
             width: 120px;
             height: 120px;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .image-preview img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        
+
         .image-preview .remove-btn {
             position: absolute;
             top: 5px;
@@ -228,21 +232,21 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-        
+
         .image-preview .remove-btn:hover {
             background: #dc2626;
         }
-        
+
         .date-input-group {
             display: flex;
             gap: 10px;
             align-items: center;
         }
-        
+
         .date-input-group input {
             flex: 1;
         }
-        
+
         .quick-date-btn {
             padding: 10px 20px;
             border: 2px solid var(--primary-color);
@@ -253,12 +257,12 @@
             transition: all 0.3s ease;
             white-space: nowrap;
         }
-        
+
         .quick-date-btn:hover {
             background: var(--primary-color);
             color: white;
         }
-        
+
         .btn-submit {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             border: none;
@@ -269,12 +273,12 @@
             font-size: 1.2rem;
             transition: all 0.3s ease;
         }
-        
+
         .btn-submit:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
         }
-        
+
         .btn-draft {
             background: white;
             border: 2px solid var(--primary-color);
@@ -285,41 +289,41 @@
             font-size: 1.2rem;
             transition: all 0.3s ease;
         }
-        
+
         .btn-draft:hover {
             background: rgba(16, 185, 129, 0.1);
         }
-        
+
         .help-text {
             color: #6b7280;
             font-size: 0.9rem;
             margin-top: 5px;
         }
-        
+
         .info-card {
             background: linear-gradient(135deg, #dcfce7, #fed7aa);
             border-radius: 20px;
             padding: 25px;
             margin-bottom: 30px;
         }
-        
+
         .info-card-title {
             font-weight: 700;
             color: var(--brown-color);
             margin-bottom: 15px;
             font-size: 1.1rem;
         }
-        
+
         .info-card ul {
             margin-bottom: 0;
             padding-left: 20px;
         }
-        
+
         .info-card li {
             color: var(--brown-color);
             margin-bottom: 8px;
         }
-        
+
         footer {
             background-color: var(--brown-color);
             color: white;
@@ -327,7 +331,7 @@
             margin-top: 80px;
             border-radius: 50px 50px 0 0;
         }
-        
+
         /* Toast通知スタイル */
         .toast-container {
             position: fixed;
@@ -335,15 +339,15 @@
             right: 20px;
             z-index: 9999;
         }
-        
+
         .toast-custom {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             border: none;
             min-width: 350px;
         }
-        
+
         .toast-custom .toast-header {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
@@ -351,30 +355,31 @@
             border: none;
             padding: 15px 20px;
         }
-        
+
         .toast-custom .toast-body {
             padding: 20px;
             color: var(--brown-color);
         }
-        
+
         .mood-selector {
             display: flex;
             gap: 15px;
             justify-content: center;
         }
-        
+
         .mood-option {
             cursor: pointer;
             font-size: 2.5rem;
             opacity: 0.3;
             transition: all 0.3s ease;
         }
-        
-        .mood-option:hover, .mood-option.active {
+
+        .mood-option:hover,
+        .mood-option.active {
             opacity: 1;
             transform: scale(1.2);
         }
-        
+
         .tag-input-container {
             display: flex;
             flex-wrap: wrap;
@@ -384,7 +389,7 @@
             border-radius: 15px;
             min-height: 50px;
         }
-        
+
         .tag-item {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
@@ -396,10 +401,10 @@
             font-size: 0.9rem;
             font-weight: 600;
         }
-        
+
         .tag-item .remove-tag {
             cursor: pointer;
-            background: rgba(255,255,255,0.3);
+            background: rgba(255, 255, 255, 0.3);
             border-radius: 50%;
             width: 18px;
             height: 18px;
@@ -408,11 +413,11 @@
             justify-content: center;
             font-size: 0.8rem;
         }
-        
+
         .tag-item .remove-tag:hover {
-            background: rgba(255,255,255,0.5);
+            background: rgba(255, 255, 255, 0.5);
         }
-        
+
         .tag-input-field {
             flex: 1;
             border: none;
@@ -420,14 +425,14 @@
             min-width: 100px;
             padding: 5px;
         }
-        
+
         .suggested-tags {
             display: flex;
             gap: 8px;
             flex-wrap: wrap;
             margin-top: 10px;
         }
-        
+
         .suggested-tag {
             background: white;
             border: 2px solid #e5e7eb;
@@ -438,13 +443,14 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-        
+
         .suggested-tag:hover {
             border-color: var(--primary-color);
             background: rgba(16, 185, 129, 0.1);
         }
     </style>
 </head>
+
 <body>
     <!-- ナビゲーションバー -->
     <nav class="navbar navbar-expand-lg sticky-top">
@@ -506,7 +512,7 @@
                                 <i class="bi bi-info-circle-fill"></i>
                                 基本情報
                             </h3>
-                            
+
                             <div class="mb-4">
                                 <label class="form-label">ペットを選択<span class="required-mark">*</span></label>
                                 <select class="form-select" required>
@@ -596,7 +602,8 @@
 
                             <div class="mb-4">
                                 <label class="form-label">詳細内容<span class="required-mark">*</span></label>
-                                <textarea class="form-control" placeholder="今日のペットの様子や気づいたことを記録してください..." required></textarea>
+                                <textarea class="form-control" placeholder="今日のペットの様子や気づいたことを記録してください..."
+                                    required></textarea>
                                 <div class="help-text">
                                     <i class="bi bi-chat-quote"></i> 健康状態、行動、食事、気づいたことなどを詳しく記録しましょう
                                 </div>
@@ -667,7 +674,8 @@
                                 <i class="bi bi-cloud-upload"></i>
                                 <div class="upload-text">クリックまたはドラッグ&ドロップで写真を追加</div>
                                 <div class="upload-hint">PNG, JPG, GIF（最大5MB、最大10枚まで）</div>
-                                <input type="file" id="fileInput" multiple accept="image/*" style="display: none;" onchange="previewImages(event)">
+                                <input type="file" id="fileInput" multiple accept="image/*" style="display: none;"
+                                    onchange="previewImages(event)">
                             </div>
 
                             <div class="image-preview-container" id="imagePreviewContainer">
@@ -744,7 +752,9 @@
                             <strong style="color: var(--primary-color);">18日 / 20日</strong>
                         </div>
                         <div class="progress" style="height: 10px; border-radius: 10px;">
-                            <div class="progress-bar" style="width: 90%; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));"></div>
+                            <div class="progress-bar"
+                                style="width: 90%; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+                            </div>
                         </div>
                     </div>
                     <div class="text-center mt-3">
@@ -760,4 +770,325 @@
                         <i class="bi bi-clock-history"></i> 最近の記録
                     </h5>
                     <div class="small">
-                        <div class="d-flex justify-content-between mb-2 pb-2" style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <div class="d-flex justify-content-between mb-2 pb-2"
+                            style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+                            <span>体重測定</span>
+                            <span class="text-muted">11/18</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 pb-2"
+                            style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+                            <span>定期健診</span>
+                            <span class="text-muted">11/10</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>投薬</span>
+                            <span class="text-muted">11/05</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast通知 -->
+    <div class="toast-container">
+        <div class="toast toast-custom" id="successToast" role="alert">
+            <div class="toast-header">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                <strong class="me-auto">投稿完了</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                <i class="bi bi-party-popper"></i> 飼育記録が正常に投稿されました！
+            </div>
+        </div>
+
+        <div class="toast toast-custom" id="draftToast" role="alert">
+            <div class="toast-header" style="background: linear-gradient(135deg, #3b82f6, #06b6d4);">
+                <i class="bi bi-save-fill me-2"></i>
+                <strong class="me-auto">下書き保存</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                <i class="bi bi-bookmark-check"></i> 下書きとして保存されました。後で編集できます。
+            </div>
+        </div>
+
+        <div class="toast toast-custom" id="errorToast" role="alert">
+            <div class="toast-header" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                <strong class="me-auto">エラー</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                必須項目を入力してください。
+            </div>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-heart-fill text-danger"></i> PetLife
+                    </h5>
+                    <p>ペットとの幸せな暮らしを応援する情報サイト</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold mb-3">サイト情報</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">利用規約</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">プライバシー</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold mb-3">サポート</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">ヘルプ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">お問い合わせ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold mb-3">フォローする</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center mb-0">&copy; 2024 PetLife. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 今日の日時を設定
+        function setToday() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const dateTimeString = `${year}-${month}-${day}T${hours}:${minutes}`;
+            document.getElementById('recordDate').value = dateTimeString;
+        }
+
+        // ページ読み込み時に今日の日時を設定
+        window.addEventListener('DOMContentLoaded', setToday);
+
+        // 気分セレクター
+        document.querySelectorAll('.mood-option').forEach(option => {
+            option.addEventListener('click', function () {
+                document.querySelectorAll('.mood-option').forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // 画像プレビュー
+        let selectedFiles = [];
+
+        function previewImages(event) {
+            const files = Array.from(event.target.files);
+            const container = document.getElementById('imagePreviewContainer');
+
+            files.forEach((file, index) => {
+                if (selectedFiles.length >= 10) {
+                    alert('最大10枚まで選択できます');
+                    return;
+                }
+
+                if (file.size > 5 * 1024 * 1024) {
+                    alert('ファイルサイズは5MB以下にしてください');
+                    return;
+                }
+
+                selectedFiles.push(file);
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    const preview = document.createElement('div');
+                    preview.className = 'image-preview';
+                    preview.innerHTML = `
+                        <img src="${e.target.result}" alt="プレビュー">
+                        <button class="remove-btn" onclick="removeImage(${selectedFiles.length - 1})">
+                            <i class="bi bi-x"></i>
+                        </button>
+                    `;
+                    container.appendChild(preview);
+                };
+
+                reader.readAsDataURL(file);
+            });
+        }
+
+        function removeImage(index) {
+            selectedFiles.splice(index, 1);
+            const container = document.getElementById('imagePreviewContainer');
+            container.innerHTML = '';
+
+            selectedFiles.forEach((file, idx) => {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const preview = document.createElement('div');
+                    preview.className = 'image-preview';
+                    preview.innerHTML = `
+                        <img src="${e.target.result}" alt="プレビュー">
+                        <button class="remove-btn" onclick="removeImage(${idx})">
+                            <i class="bi bi-x"></i>
+                        </button>
+                    `;
+                    container.appendChild(preview);
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+
+        // タグ機能
+        let tags = [];
+
+        function addTag(tagText) {
+            if (!tagText || tagText.trim() === '') return;
+
+            if (tags.includes(tagText)) {
+                alert('このタグは既に追加されています');
+                return;
+            }
+
+            if (tags.length >= 10) {
+                alert('タグは最大10個まで追加できます');
+                return;
+            }
+
+            tags.push(tagText);
+            renderTags();
+        }
+
+        function removeTag(index) {
+            tags.splice(index, 1);
+            renderTags();
+        }
+
+        function renderTags() {
+            const container = document.getElementById('tagContainer');
+            const input = document.getElementById('tagInput');
+
+            container.innerHTML = '';
+
+            tags.forEach((tag, index) => {
+                const tagElement = document.createElement('div');
+                tagElement.className = 'tag-item';
+                tagElement.innerHTML = `
+                    <span>${tag}</span>
+                    <span class="remove-tag" onclick="removeTag(${index})">×</span>
+                `;
+                container.appendChild(tagElement);
+            });
+
+            const newInput = input.cloneNode(true);
+            container.appendChild(newInput);
+
+            newInput.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    const value = this.value.trim();
+                    if (value) {
+                        addTag(value);
+                        this.value = '';
+                    }
+                }
+            });
+        }
+
+        // 初期化
+        document.getElementById('tagInput').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                const value = this.value.trim();
+                if (value) {
+                    addTag(value);
+                    this.value = '';
+                }
+            }
+        });
+
+        // フォーム送信
+        document.getElementById('recordForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // バリデーション
+            const form = e.target;
+            if (!form.checkValidity()) {
+                form.classList.add('was-validated');
+                showToast('errorToast');
+                return;
+            }
+
+            // 成功トースト表示
+            showToast('successToast');
+
+            // フォームリセット（オプション）
+            setTimeout(() => {
+                form.reset();
+                tags = [];
+                selectedFiles = [];
+                document.getElementById('imagePreviewContainer').innerHTML = '';
+                document.getElementById('tagContainer').innerHTML = '<input type="text" class="tag-input-field" id="tagInput" placeholder="タグを入力してEnter">';
+                document.querySelectorAll('.mood-option').forEach(opt => opt.classList.remove('active'));
+                document.querySelector('.mood-option[data-mood="normal"]').classList.add('active');
+                setToday();
+            }, 2000);
+        });
+
+        // 下書き保存
+        function saveDraft() {
+            showToast('draftToast');
+        }
+
+        // Toast表示関数
+        function showToast(toastId) {
+            const toastElement = document.getElementById(toastId);
+            const toast = new bootstrap.Toast(toastElement, {
+                autohide: true,
+                delay: 5000
+            });
+            toast.show();
+        }
+
+        // ドラッグ&ドロップ機能
+        const uploadArea = document.querySelector('.file-upload-area');
+
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.style.borderColor = 'var(--primary-color)';
+            uploadArea.style.background = 'rgba(16, 185, 129, 0.05)';
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.style.borderColor = '#e5e7eb';
+            uploadArea.style.background = '#fafafa';
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.style.borderColor = '#e5e7eb';
+            uploadArea.style.background = '#fafafa';
+
+            const files = e.dataTransfer.files;
+            const fileInput = document.getElementById('fileInput');
+            fileInput.files = files;
+
+            const event = new Event('change', { bubbles: true });
+            fileInput.dispatchEvent(event);
+        });
+    </script>
+</body>
+
+</html>
